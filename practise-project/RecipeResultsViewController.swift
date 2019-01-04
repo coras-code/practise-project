@@ -19,7 +19,7 @@ class RecipeResultsViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        label.text = recipeName
+        label.text = "'" + recipeName + "'"
     }
     
 
