@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1336AB1921DFC08300700524 /* RecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */; };
+		1336AB1B21DFC69F00700524 /* RecipeResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */; };
 		13F10C0A21BAB5D000538958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F10C0921BAB5D000538958 /* AppDelegate.swift */; };
-		13F10C0C21BAB5D000538958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F10C0B21BAB5D000538958 /* ViewController.swift */; };
+		13F10C0C21BAB5D000538958 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F10C0B21BAB5D000538958 /* HomeViewController.swift */; };
 		13F10C0F21BAB5D000538958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F10C0D21BAB5D000538958 /* Main.storyboard */; };
 		13F10C1121BAB5D200538958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F10C1021BAB5D200538958 /* Assets.xcassets */; };
 		13F10C1421BAB5D200538958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F10C1221BAB5D200538958 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewController.swift; sourceTree = "<group>"; };
+		1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResultsViewController.swift; sourceTree = "<group>"; };
 		13F10C0621BAB5D000538958 /* practise-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practise-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F10C0921BAB5D000538958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13F10C0B21BAB5D000538958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13F10C0B21BAB5D000538958 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		13F10C0E21BAB5D000538958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13F10C1021BAB5D200538958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13F10C1321BAB5D200538958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				13F10C0921BAB5D000538958 /* AppDelegate.swift */,
-				13F10C0B21BAB5D000538958 /* ViewController.swift */,
+				13F10C0B21BAB5D000538958 /* HomeViewController.swift */,
 				13F10C0D21BAB5D000538958 /* Main.storyboard */,
+				1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */,
+				1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */,
 				13F10C1021BAB5D200538958 /* Assets.xcassets */,
 				13F10C1221BAB5D200538958 /* LaunchScreen.storyboard */,
 				13F10C1521BAB5D200538958 /* Info.plist */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F10C0C21BAB5D000538958 /* ViewController.swift in Sources */,
+				1336AB1921DFC08300700524 /* RecipeSearchViewController.swift in Sources */,
+				13F10C0C21BAB5D000538958 /* HomeViewController.swift in Sources */,
 				13F10C0A21BAB5D000538958 /* AppDelegate.swift in Sources */,
+				1336AB1B21DFC69F00700524 /* RecipeResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
