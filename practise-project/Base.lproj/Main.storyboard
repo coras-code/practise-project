@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="apz-uO-tMs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,15 +37,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ydq-bH-uv2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-287" y="-341"/>
+            <point key="canvasLocation" x="652" y="-341.37931034482762"/>
         </scene>
         <!--Recipe Search View Controller-->
         <scene sceneID="Xlb-8g-ZvD">
             <objects>
-                <viewController id="UqB-Yi-gV1" customClass="RecipeSearchViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController providesPresentationContextTransitionStyle="YES" id="UqB-Yi-gV1" customClass="RecipeSearchViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7v-9X-xbj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,8 +75,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="action:" destination="UqB-Yi-gV1" eventType="touchUpInside" id="ya7-fJ-ofg"/>
-                                    <segue destination="Woq-cc-AcZ" kind="show" identifier="segue" id="XQu-Cc-t99"/>
+                                    <action selector="searchRecipes:" destination="UqB-Yi-gV1" eventType="touchUpInside" id="gPq-Nk-pju"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the recipe you would like to find: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-E6-NLf">
@@ -95,8 +95,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="action:" destination="UqB-Yi-gV1" eventType="touchUpInside" id="5T1-sI-eNW"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="fYt-Zg-KhE"/>
+                                    <action selector="backButtonPressed:" destination="UqB-Yi-gV1" eventType="touchUpInside" id="uer-p4-5Ic"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,18 +103,18 @@
                         <viewLayoutGuide key="safeArea" id="xQP-et-JFq"/>
                     </view>
                     <connections>
-                        <outlet property="outlet" destination="0CU-ns-RSK" id="JvS-O6-oe5"/>
+                        <outlet property="searchTextField" destination="0CU-ns-RSK" id="JvS-O6-oe5"/>
+                        <segue destination="Woq-cc-AcZ" kind="show" id="yJD-o6-MXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVM-Jt-Vms" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581.60000000000002" y="-341.37931034482762"/>
+            <point key="canvasLocation" x="1434" y="-341"/>
         </scene>
         <!--Recipe Results View Controller-->
         <scene sceneID="lg3-x6-91j">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q79-5h-3fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Woq-cc-AcZ" customClass="RecipeResultsViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipeResults" id="Woq-cc-AcZ" customClass="RecipeResultsViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m1N-DR-cs0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,8 +150,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="action:" destination="UqB-Yi-gV1" eventType="touchUpInside" id="TTY-i1-qcK"/>
-                                    <segue destination="UqB-Yi-gV1" kind="show" id="dSZ-sQ-r2C"/>
+                                    <action selector="backButtonPressed:" destination="Woq-cc-AcZ" eventType="touchUpInside" id="3A2-wU-rpj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,11 +161,26 @@
                         <outlet property="label" destination="tmI-9J-1a2" id="8s4-20-NUq"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q79-5h-3fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1484" y="-341.37931034482762"/>
+            <point key="canvasLocation" x="2238" y="-341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mvd-OM-7DY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="apz-uO-tMs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="11c-CM-zje">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TzS-fs-fx3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpu-bg-kTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287.19999999999999" y="-341.37931034482762"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="dSZ-sQ-r2C"/>
-    </inferredMetricsTieBreakers>
 </document>

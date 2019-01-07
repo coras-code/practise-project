@@ -10,19 +10,19 @@ import UIKit
 
 class RecipeResultsViewController: UIViewController {
     
-    
     @IBOutlet weak var label: UILabel!
     
-
+    var recipeName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = "'\(recipeName)'"
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        label.text = "'" + recipeName + "'"
+    @IBAction func backButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
-
     /*
     // MARK: - Navigation
 

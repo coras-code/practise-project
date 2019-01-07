@@ -59,15 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				13F10C0921BAB5D000538958 /* AppDelegate.swift */,
-				13F10C0B21BAB5D000538958 /* HomeViewController.swift */,
 				13F10C0D21BAB5D000538958 /* Main.storyboard */,
-				1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */,
+				F432123F21E36F87008F4BFE /* Home */,
+				F432123D21E36F3A008F4BFE /* Recipes */,
+				F432123E21E36F49008F4BFE /* Supporting Files */,
+			);
+			path = "practise-project";
+			sourceTree = "<group>";
+		};
+		F432123D21E36F3A008F4BFE /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
 				1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */,
+				1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		F432123E21E36F49008F4BFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				13F10C1021BAB5D200538958 /* Assets.xcassets */,
 				13F10C1221BAB5D200538958 /* LaunchScreen.storyboard */,
 				13F10C1521BAB5D200538958 /* Info.plist */,
 			);
-			path = "practise-project";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F432123F21E36F87008F4BFE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				13F10C0B21BAB5D000538958 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
