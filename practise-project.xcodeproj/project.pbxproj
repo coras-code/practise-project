@@ -43,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13EBD73F222732E8005E7F3E /* LeftoverSearch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LeftoverSearch;
+			sourceTree = "<group>";
+		};
+		13EBD740222733E0005E7F3E /* MyWorkIngredients */ = {
+			isa = PBXGroup;
+			children = (
+				13F0C8F32217128B008F3E39 /* MyIngredientsTableViewController.swift */,
+				13EBD73D2225880E005E7F3E /* ingredients.swift */,
+			);
+			path = MyWorkIngredients;
+			sourceTree = "<group>";
+		};
 		13F10BFD21BAB5D000538958 = {
 			isa = PBXGroup;
 			children = (
@@ -65,21 +81,21 @@
 				13F10C0921BAB5D000538958 /* AppDelegate.swift */,
 				13F10C0D21BAB5D000538958 /* Main.storyboard */,
 				F432123F21E36F87008F4BFE /* Home */,
-				F432123D21E36F3A008F4BFE /* Recipes */,
+				13EBD73F222732E8005E7F3E /* LeftoverSearch */,
+				F432123D21E36F3A008F4BFE /* RecipeSearch */,
+				13EBD740222733E0005E7F3E /* MyWorkIngredients */,
 				F432123E21E36F49008F4BFE /* Supporting Files */,
 			);
 			path = "practise-project";
 			sourceTree = "<group>";
 		};
-		F432123D21E36F3A008F4BFE /* Recipes */ = {
+		F432123D21E36F3A008F4BFE /* RecipeSearch */ = {
 			isa = PBXGroup;
 			children = (
 				1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */,
-				13F0C8F32217128B008F3E39 /* MyIngredientsTableViewController.swift */,
 				1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */,
-				13EBD73D2225880E005E7F3E /* ingredients.swift */,
 			);
-			path = Recipes;
+			path = RecipeSearch;
 			sourceTree = "<group>";
 		};
 		F432123E21E36F49008F4BFE /* Supporting Files */ = {
