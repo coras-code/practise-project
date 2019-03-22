@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Ingredient {
-    let name: String
+struct Ingredient: Codable {
+    let name: String?
 }

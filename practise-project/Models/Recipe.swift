@@ -7,10 +7,26 @@
 //
 
 import Foundation
+import UIKit
 
-struct Recipe {
+struct Results: Codable {
+    let results: [Recipe]
+}
+
+struct Recipe: Codable {
     let title: String
     let href: URL // Link to recipe website
-    let ingredients: [Ingredient]
-    let thumbnail: URL
+    let ingredients: String
+    let thumbnail: String
+    
+//    enum CodingKeys: String, CodingKey {
+//        case title = "title"
+//        case href = "href"
+//        case ingredients = "ingredients"
+//        case thumbnail = "thumbnail"
+    
+    
+    
 }
+
+
