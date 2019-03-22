@@ -26,7 +26,7 @@ struct Recipe: Codable {
 //        case thumbnail = "thumbnail"
     
     
-    
+    //working version
 }
 
 
