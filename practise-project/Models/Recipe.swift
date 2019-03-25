@@ -10,17 +10,17 @@ import Foundation
 import UIKit
 
 struct Outcome: Decodable {
-    let title: String //can leave out of code
-    let version: Double //can leave out of code
-    let href: String //URL //can leave out of code
-    let results: [Recipe]
-    
-    }
+    //let title: String //can leave out of code
+    //let version: Double //can leave out of code
+   // let href: String //URL //can leave out of code
+   let recipes: [Recipe]
     
     enum CodingKeys: String, CodingKey {
-    case results = "recipes"
+        case recipes = "results"
+    }
+    
 }
-
+    
 struct Recipe: Decodable {
     let title: String
     let href: String // was an URL but i changed it

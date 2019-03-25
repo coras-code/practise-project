@@ -25,23 +25,25 @@ class HomeViewController: UIViewController {
 //                //print the data from the Outcome as a string
 //                let dataAsString = String(data: data, encoding: .utf8)
 //                print(dataAsString)
+                
+                var outcome: Outcome?
 
                 do {
-                    let outcome = try
-                        JSONDecoder().decode(Outcome.self, from: data)
+                    outcome = try JSONDecoder().decode(Outcome.self, from: data)
                     //print(outcome.title, outcome.href, outcome.version, outcome.results)
-                    
-                   // let recipe1 = outcome.results.first?
-                    let ingredients1 = outcome.results.first?.ingredients
-                    
-                    let array = ingredients1!.components(separatedBy: ", ")
-                     print(array)
-            
-
+                
                 } catch let jsonErr {
                     print("Error Serialisating json:", jsonErr)
                 }
+                
+                
+                guard let firstRecipe = outcome?.recipes.first else { return }
 
+                // let recipe1 = decodedOutcome.results.first?
+                let firstIngredients = firstRecipe.ingredients
+                
+                let array = firstIngredients.components(separatedBy: ", ")
+                print(array)
                 
                     
                 
