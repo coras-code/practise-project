@@ -21,11 +21,11 @@ class HomeViewController: UIViewController {
                 
                 let jasonDecoder =  JSONDecoder()
                 let result = try! jasonDecoder.decode(Results.self, from: data)
-                print(result)
+               print(result)
             
                 }
-            
-                 task.resume()
-    }
+        
+                task.resume()
+        }
     
 }

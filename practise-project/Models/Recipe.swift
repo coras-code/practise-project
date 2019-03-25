@@ -15,9 +15,10 @@ struct Results: Codable {
 
 struct Recipe: Codable {
     let title: String
-    let href: URL // Link to recipe website
+    let href: String // was an URL but i changed it
     let ingredients: String
     let thumbnail: String
+    
     
 //    enum CodingKeys: String, CodingKey {
 //        case title = "title"
@@ -26,7 +27,15 @@ struct Recipe: Codable {
 //        case thumbnail = "thumbnail"
     
     
-    //working version
+    init(result: [String: Any]) {
+    title = result["title"] as? String ?? ""
+    href = result["href"] as? String ?? ""
+    ingredients = result["ingredients"] as? String ?? ""
+    thumbnail = result["thumbnail"] as? String ?? ""
+        
+        print(title)
+    
+    }
+
+
 }
-
-
