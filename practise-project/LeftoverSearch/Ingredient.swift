@@ -10,4 +10,6 @@ import Foundation
 
 struct Ingredient: Codable {
     let name: String?
+    
+    //should this be an optional
 }
