@@ -8,25 +8,7 @@
 
 import UIKit
 
-struct Results: Codable {
-    let results: [Recipe]
-}
 
-struct Recipe: Codable {
-    let title: String
-    let href: String // was an URL but i changed it
-    let ingredients: String
-    let thumbnail: String
-    
-    //Old method to parse Json-creating a dictionary from the API
-    //Access the dictionary, cast it and with a defualt value
-    init(jason: [String: Any]) {
-            title = jason["title"] as? String ?? ""
-            href = jason["href"] as? String ?? ""
-            ingredients = jason["ingredients"] as? String ?? ""
-            thumbnail = jason["thumbnail"] as? String ?? ""
-    }
-}
 
 class HomeViewController: UIViewController {
 
@@ -37,51 +19,32 @@ class HomeViewController: UIViewController {
             let url = URL(string: "http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3")!
 
             URLSession.shared.dataTask(with: url) { (data, response, error) in
-                
                 //unwrapping data optional
                 guard let data = data else { return }
               
-//                //print the data from the API as a string
+//                //print the data from the Outcome as a string
 //                let dataAsString = String(data: data, encoding: .utf8)
 //                print(dataAsString)
-                
-                //Old method to parse Json
+
                 do {
-                    // cast it to string any for the next part
-                    guard let json = try
-                        JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] else { return }//test print(json)
+                    let outcome = try
+                        JSONDecoder().decode(Outcome.self, from: data)
+                    //print(outcome.title, outcome.href, outcome.version, outcome.results)
                     
-                    let recipe = Recipe(jason: json)
-                    print(recipe.title)
+                   // let recipe1 = outcome.results.first?
+                    let ingredients1 = outcome.results.first?.ingredients
                     
-                } catch let jsonErr {
-                    print("Error with serialising the Json:", jsonErr)
-                }
-                
-                }.resume()
-            
-            
-            
+                    let array = ingredients1!.components(separatedBy: ", ")
+                     print(array)
             
 
+                } catch let jsonErr {
+                    print("Error Serialisating json:", jsonErr)
+                }
+
+                
+                    
+                
+                }.resume()
     }
-    
-    }
-            
-//
-//            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-//                guard let data = data else {
-//                    return
-//                }
-//
-//                let jasonDecoder =  JSONDecoder()
-//                let result = try! jasonDecoder.decode(Results.self, from: data)
-//               print(result)
-//
-//                }
-//
-//                task.resume()
-//        }
-//
-//}
-//}
+}
