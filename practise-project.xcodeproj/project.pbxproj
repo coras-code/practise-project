@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13265F05224CDEC300E6D0A9 /* LeftoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13265F04224CDEC300E6D0A9 /* LeftoverViewController.swift */; };
+		13265F07224CE32500E6D0A9 /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13265F06224CE32500E6D0A9 /* SegueIdentifiers.swift */; };
 		1336AB1921DFC08300700524 /* RecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */; };
 		1336AB1B21DFC69F00700524 /* RecipeResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */; };
 		13A0D10222284DD8008B115B /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A0D10122284DD8008B115B /* Ingredient.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13265F04224CDEC300E6D0A9 /* LeftoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftoverViewController.swift; sourceTree = "<group>"; };
+		13265F06224CE32500E6D0A9 /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
 		1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewController.swift; sourceTree = "<group>"; };
 		1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResultsViewController.swift; sourceTree = "<group>"; };
 		13A0D10122284DD8008B115B /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 			children = (
 				13A0D10122284DD8008B115B /* Ingredient.swift */,
 				13FF11FB2241536800072D87 /* Recipe.swift */,
+				13265F04224CDEC300E6D0A9 /* LeftoverViewController.swift */,
 			);
 			path = LeftoverSearch;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 				F432123D21E36F3A008F4BFE /* RecipeSearch */,
 				13EBD740222733E0005E7F3E /* MyWorkIngredients */,
 				F432123E21E36F49008F4BFE /* Supporting Files */,
+				13265F06224CE32500E6D0A9 /* SegueIdentifiers.swift */,
 			);
 			path = "practise-project";
 			sourceTree = "<group>";
@@ -193,12 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13265F07224CE32500E6D0A9 /* SegueIdentifiers.swift in Sources */,
 				13F0C8F42217128B008F3E39 /* MyIngredientsTableViewController.swift in Sources */,
 				13A0D10222284DD8008B115B /* Ingredient.swift in Sources */,
 				1336AB1921DFC08300700524 /* RecipeSearchViewController.swift in Sources */,
 				13EBD73E2225880E005E7F3E /* ingredients.swift in Sources */,
 				13F10C0A21BAB5D000538958 /* AppDelegate.swift in Sources */,
 				1336AB1B21DFC69F00700524 /* RecipeResultsViewController.swift in Sources */,
+				13265F05224CDEC300E6D0A9 /* LeftoverViewController.swift in Sources */,
 				13FF11FC2241536800072D87 /* Recipe.swift in Sources */,
 				F411934421E4C67A00FA9BDB /* HomeViewController.swift in Sources */,
 			);

@@ -53,8 +53,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="showIngredients:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUH-gu-EOo"/>
-                                    <segue destination="SQU-xF-aZN" kind="presentation" id="yy4-Y9-GQl"/>
+                                    <action selector="showIngredientsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5z-Zz-dto"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,6 +61,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main Menu" id="Ydq-bH-uv2"/>
+                    <connections>
+                        <segue destination="SQU-xF-aZN" kind="presentation" identifier="mainToLeftovers" id="N8I-tu-0ZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="652" y="385.45727136431788"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Leftover View Controller-->
         <scene sceneID="2vr-wi-f2p">
             <objects>
-                <viewController id="SQU-xF-aZN" customClass="HomeViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SQU-xF-aZN" customClass="LeftoverViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHt-oe-b5L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,6 +137,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gXr-wg-5Hu"/>
                     </view>
+                    <connections>
+                        <outlet property="ingredientLabel" destination="kkd-BH-WZ3" id="JgC-TZ-jct"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjo-kQ-fKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

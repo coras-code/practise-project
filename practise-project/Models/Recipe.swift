@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Outcome: Decodable {
+struct RecipeResponse: Decodable {
     //let title: String //can leave out of code
     //let version: Double //can leave out of code
    // let href: String //URL //can leave out of code
