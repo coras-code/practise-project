@@ -54,6 +54,7 @@
                                 </state>
                                 <connections>
                                     <action selector="showIngredientsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5z-Zz-dto"/>
+                                    <segue destination="y7d-hg-WXI" kind="show" identifier="mainToLeftovers" id="PO9-jV-VD7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,9 +62,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main Menu" id="Ydq-bH-uv2"/>
-                    <connections>
-                        <segue destination="SQU-xF-aZN" kind="presentation" identifier="mainToLeftovers" id="N8I-tu-0ZN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,7 +141,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjo-kQ-fKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805.625" y="167.95774647887325"/>
+            <point key="canvasLocation" x="2284" y="113"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m9E-ih-l53">
+            <objects>
+                <viewController id="y7d-hg-WXI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="biz-Ly-0KG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfy-H6-dcE">
+                                <rect key="frame" x="123" y="144" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="SQU-xF-aZN" kind="show" id="Xrl-CO-IPG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="L6D-cs-eto"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ix-qS-nMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="112"/>
         </scene>
         <!--Recipe Search View Controller-->
         <scene sceneID="Xlb-8g-ZvD">
