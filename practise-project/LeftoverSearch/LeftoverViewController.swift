@@ -8,44 +8,23 @@
 
 import UIKit
 
-class IngredientsService {
-    
-    func getIngredients(onSuccess: @escaping ([String]) -> Void, onError: @escaping (Error) -> Void) {
-        let url = URL(string: "http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3")!
-        
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else { return }
-            
-            do {
-                let response = try JSONDecoder().decode(RecipeResponse.self, from: data)
-                guard let firstRecipe = response.recipes.first else { return }
-                
-                let firstIngredients = firstRecipe.ingredients
-                
-                let array = firstIngredients.components(separatedBy: ", ")
-                DispatchQueue.main.async {
-                    onSuccess(array)
-                }
-                
-            } catch let jsonErr {
-                print("Error deserialisating json:", jsonErr)
-                onError(jsonErr)
-            }
-        }.resume()
-    }
-}
+
 
 class LeftoverViewController: UIViewController {
 
-    @IBOutlet var ingredientLabel: UILabel!
+    @IBOutlet var ingredientLabel: UILabel?
+    var ingredientsList = "" {
+        didSet
+        {self.ingredientLabel?.text = ingredientsList}
+    }
     let ingredientsService = IngredientsService()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ingredientLabel.numberOfLines = 0
+        ingredientLabel?.numberOfLines = 0
         ingredientsService.getIngredients(onSuccess: { (ingredients) in
             print(ingredients)
 
-            self.ingredientLabel.text  = ingredients.joined(separator: ", ")
+            self.ingredientsList  = ingredients.joined(separator: ", ")
         }) { (error) in
             print("Could not parse ingredients because \(error)")
         }
