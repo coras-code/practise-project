@@ -8,9 +8,7 @@
 
 import UIKit
 
-
-
-class LeftoverViewController: UIViewController {
+class LeftoverRecipeViewController: UIViewController {
 
     @IBOutlet var ingredientLabel: UILabel?
     var ingredientsList = "" {
@@ -18,6 +16,7 @@ class LeftoverViewController: UIViewController {
         {self.ingredientLabel?.text = ingredientsList}
     }
     let ingredientsService = IngredientsService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ingredientLabel?.numberOfLines = 0
@@ -28,23 +27,6 @@ class LeftoverViewController: UIViewController {
         }) { (error) in
             print("Could not parse ingredients because \(error)")
         }
-        // Do any additional setup after loading the view.
     }
-    
-
-    
-    
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

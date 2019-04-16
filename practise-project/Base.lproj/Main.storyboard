@@ -53,8 +53,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="showIngredientsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5z-Zz-dto"/>
-                                    <segue destination="y7d-hg-WXI" kind="show" identifier="mainToLeftovers" id="PO9-jV-VD7"/>
+                                    <segue destination="y7d-hg-WXI" kind="show" id="Gyb-ft-rac"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="652" y="385.45727136431788"/>
         </scene>
-        <!--Leftover View Controller-->
+        <!--Leftover Recipe View Controller-->
         <scene sceneID="2vr-wi-f2p">
             <objects>
-                <viewController id="SQU-xF-aZN" customClass="LeftoverViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SQU-xF-aZN" customClass="LeftoverRecipeViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHt-oe-b5L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="2284" y="113"/>
         </scene>
-        <!--View Controller-->
+        <!--Leftover Recipe Search View Controller-->
         <scene sceneID="m9E-ih-l53">
             <objects>
-                <viewController id="y7d-hg-WXI" sceneMemberID="viewController">
+                <viewController id="y7d-hg-WXI" customClass="LeftoverRecipeSearchViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="biz-Ly-0KG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

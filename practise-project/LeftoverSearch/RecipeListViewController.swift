@@ -38,8 +38,6 @@ class IngredientsService {
 
 class RecipeListViewController: UIViewController {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
