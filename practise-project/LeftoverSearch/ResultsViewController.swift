@@ -36,23 +36,37 @@ class IngredientsService {
     }
 }
 
-class RecipeListViewController: UIViewController {
+class ResultsViewController: UIViewController {
+    
+    @IBAction func enter(_ sender: Any) {
+        performSegue(withIdentifier: "resultsTOfinal", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var finalRecipeViewConroller = segue.destination as! FinalRecipeViewController
+        finalRecipeViewConroller.ingredients = ingredientsList
+    }
+    
+    let ingredientsService = IngredientsService()
+    var ingredientsList = ""
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        ingredientsService.getIngredients(onSuccess: { (ingredients) in
+            //print(ingredients)
+            
+            self.ingredientsList  = ingredients.joined(separator: ", ")
+            print("this is what is in the list '\(self.ingredientsList)'")
+            
+        }) { (error) in
+            print("Could not parse ingredients because \(error)")
+        }
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+

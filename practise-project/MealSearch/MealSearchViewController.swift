@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipeSearchViewController: UIViewController {
+class MealSearchViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -20,9 +20,9 @@ class RecipeSearchViewController: UIViewController {
         
         if let searchText = searchTextField.text, !searchText.isEmpty {  // Will check if something is inputted and if not it ignore
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let recipeResultsVC = storyboard.instantiateViewController(withIdentifier: "recipeResults") as! RecipeResultsViewController
+            let recipeResultsVC = storyboard.instantiateViewController(withIdentifier: "recipeResults") as! MealResultsViewController
             
-            recipeResultsVC.recipeName = searchText
+            recipeResultsVC.mealName = searchText
             
             navigationController?.pushViewController(recipeResultsVC, animated: true)
         }

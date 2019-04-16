@@ -22,15 +22,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s8-jx-bPh">
-                                <rect key="frame" x="97" y="381" width="31" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                <state key="normal" title="My Work"/>
-                                <connections>
-                                    <segue destination="Y57-by-ehu" kind="presentation" id="7Ts-0C-p3a"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YP8-gF-bcO">
                                 <rect key="frame" x="158" y="495" width="162" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,7 +44,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="y7d-hg-WXI" kind="show" id="Gyb-ft-rac"/>
+                                    <segue destination="y7d-hg-WXI" kind="show" identifier="results" id="Gyb-ft-rac"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="652" y="385.45727136431788"/>
         </scene>
-        <!--Leftover Recipe View Controller-->
+        <!--Final Recipe View Controller-->
         <scene sceneID="2vr-wi-f2p">
             <objects>
-                <viewController id="SQU-xF-aZN" customClass="LeftoverRecipeViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SQU-xF-aZN" customClass="FinalRecipeViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHt-oe-b5L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,8 +114,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkd-BH-WZ3">
-                                <rect key="frame" x="41" y="92" width="238" height="253"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRp-yf-D87">
+                                <rect key="frame" x="69" y="268" width="168" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -135,42 +126,45 @@
                         <viewLayoutGuide key="safeArea" id="gXr-wg-5Hu"/>
                     </view>
                     <connections>
-                        <outlet property="ingredientLabel" destination="kkd-BH-WZ3" id="JgC-TZ-jct"/>
+                        <outlet property="label" destination="KRp-yf-D87" id="oeg-bk-ZD2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjo-kQ-fKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2284" y="113"/>
+            <point key="canvasLocation" x="2283.75" y="111.97183098591549"/>
         </scene>
-        <!--Leftover Recipe Search View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="m9E-ih-l53">
             <objects>
-                <viewController id="y7d-hg-WXI" customClass="LeftoverRecipeSearchViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y7d-hg-WXI" customClass="ResultsViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="biz-Ly-0KG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfy-H6-dcE">
-                                <rect key="frame" x="123" y="144" width="46" height="30"/>
+                                <rect key="frame" x="128" y="144" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Enter"/>
                                 <connections>
-                                    <segue destination="SQU-xF-aZN" kind="show" id="Xrl-CO-IPG"/>
+                                    <action selector="enter:" destination="y7d-hg-WXI" eventType="touchUpInside" id="gyT-TC-9GH"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="L6D-cs-eto"/>
                     </view>
+                    <connections>
+                        <segue destination="SQU-xF-aZN" kind="show" identifier="resultsTOfinal" id="H51-1P-GrO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ix-qS-nMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1491" y="112"/>
         </scene>
-        <!--Recipe Search View Controller-->
+        <!--Meal Search View Controller-->
         <scene sceneID="Xlb-8g-ZvD">
             <objects>
-                <viewController providesPresentationContextTransitionStyle="YES" id="UqB-Yi-gV1" customClass="RecipeSearchViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController providesPresentationContextTransitionStyle="YES" id="UqB-Yi-gV1" customClass="MealSearchViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7v-9X-xbj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="1725.5999999999999" y="-690.40479760119945"/>
         </scene>
-        <!--Recipe Results View Controller-->
+        <!--Meal Results View Controller-->
         <scene sceneID="lg3-x6-91j">
             <objects>
-                <viewController storyboardIdentifier="recipeResults" id="Woq-cc-AcZ" customClass="RecipeResultsViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipeResults" id="Woq-cc-AcZ" customClass="MealResultsViewController" customModule="practise_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m1N-DR-cs0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

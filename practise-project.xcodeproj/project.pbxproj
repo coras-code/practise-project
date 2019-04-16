@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13265F05224CDEC300E6D0A9 /* LeftoverRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13265F04224CDEC300E6D0A9 /* LeftoverRecipeViewController.swift */; };
+		13265F05224CDEC300E6D0A9 /* FinalRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13265F04224CDEC300E6D0A9 /* FinalRecipeViewController.swift */; };
 		13265F07224CE32500E6D0A9 /* SegueIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13265F06224CE32500E6D0A9 /* SegueIdentifiers.swift */; };
-		1336AB1921DFC08300700524 /* RecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */; };
-		1336AB1B21DFC69F00700524 /* RecipeResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */; };
-		135DFB192253B83B0074D7E4 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135DFB182253B83B0074D7E4 /* RecipeListViewController.swift */; };
+		1336AB1921DFC08300700524 /* MealSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1821DFC08300700524 /* MealSearchViewController.swift */; };
+		1336AB1B21DFC69F00700524 /* MealResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1336AB1A21DFC69F00700524 /* MealResultsViewController.swift */; };
+		135DFB192253B83B0074D7E4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135DFB182253B83B0074D7E4 /* ResultsViewController.swift */; };
 		13A0D10222284DD8008B115B /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A0D10122284DD8008B115B /* Ingredient.swift */; };
-		13C239B5226601CA006F38FB /* LeftoverRecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C239B4226601CA006F38FB /* LeftoverRecipeSearchViewController.swift */; };
-		13EBD73E2225880E005E7F3E /* ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBD73D2225880E005E7F3E /* ingredients.swift */; };
-		13F0C8F42217128B008F3E39 /* MyIngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F0C8F32217128B008F3E39 /* MyIngredientsTableViewController.swift */; };
+		13C239B5226601CA006F38FB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C239B4226601CA006F38FB /* SearchViewController.swift */; };
 		13F10C0A21BAB5D000538958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F10C0921BAB5D000538958 /* AppDelegate.swift */; };
 		13F10C0F21BAB5D000538958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F10C0D21BAB5D000538958 /* Main.storyboard */; };
 		13F10C1121BAB5D200538958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F10C1021BAB5D200538958 /* Assets.xcassets */; };
@@ -25,15 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13265F04224CDEC300E6D0A9 /* LeftoverRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftoverRecipeViewController.swift; sourceTree = "<group>"; };
+		13265F04224CDEC300E6D0A9 /* FinalRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalRecipeViewController.swift; sourceTree = "<group>"; };
 		13265F06224CE32500E6D0A9 /* SegueIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIdentifiers.swift; sourceTree = "<group>"; };
-		1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewController.swift; sourceTree = "<group>"; };
-		1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResultsViewController.swift; sourceTree = "<group>"; };
-		135DFB182253B83B0074D7E4 /* RecipeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		1336AB1821DFC08300700524 /* MealSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSearchViewController.swift; sourceTree = "<group>"; };
+		1336AB1A21DFC69F00700524 /* MealResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealResultsViewController.swift; sourceTree = "<group>"; };
+		135DFB182253B83B0074D7E4 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		13A0D10122284DD8008B115B /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		13C239B4226601CA006F38FB /* LeftoverRecipeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftoverRecipeSearchViewController.swift; sourceTree = "<group>"; };
-		13EBD73D2225880E005E7F3E /* ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ingredients.swift; sourceTree = "<group>"; };
-		13F0C8F32217128B008F3E39 /* MyIngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIngredientsTableViewController.swift; sourceTree = "<group>"; };
+		13C239B4226601CA006F38FB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		13F10C0621BAB5D000538958 /* practise-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practise-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F10C0921BAB5D000538958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13F10C0E21BAB5D000538958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,20 +56,11 @@
 			children = (
 				13A0D10122284DD8008B115B /* Ingredient.swift */,
 				13FF11FB2241536800072D87 /* Recipe.swift */,
-				13265F04224CDEC300E6D0A9 /* LeftoverRecipeViewController.swift */,
-				13C239B4226601CA006F38FB /* LeftoverRecipeSearchViewController.swift */,
-				135DFB182253B83B0074D7E4 /* RecipeListViewController.swift */,
+				13265F04224CDEC300E6D0A9 /* FinalRecipeViewController.swift */,
+				13C239B4226601CA006F38FB /* SearchViewController.swift */,
+				135DFB182253B83B0074D7E4 /* ResultsViewController.swift */,
 			);
 			path = LeftoverSearch;
-			sourceTree = "<group>";
-		};
-		13EBD740222733E0005E7F3E /* MyWorkIngredients */ = {
-			isa = PBXGroup;
-			children = (
-				13F0C8F32217128B008F3E39 /* MyIngredientsTableViewController.swift */,
-				13EBD73D2225880E005E7F3E /* ingredients.swift */,
-			);
-			path = MyWorkIngredients;
 			sourceTree = "<group>";
 		};
 		13F10BFD21BAB5D000538958 = {
@@ -99,21 +86,20 @@
 				13F10C0D21BAB5D000538958 /* Main.storyboard */,
 				F432123F21E36F87008F4BFE /* Home */,
 				13EBD73F222732E8005E7F3E /* LeftoverSearch */,
-				F432123D21E36F3A008F4BFE /* RecipeSearch */,
-				13EBD740222733E0005E7F3E /* MyWorkIngredients */,
+				F432123D21E36F3A008F4BFE /* MealSearch */,
 				F432123E21E36F49008F4BFE /* Supporting Files */,
 				13265F06224CE32500E6D0A9 /* SegueIdentifiers.swift */,
 			);
 			path = "practise-project";
 			sourceTree = "<group>";
 		};
-		F432123D21E36F3A008F4BFE /* RecipeSearch */ = {
+		F432123D21E36F3A008F4BFE /* MealSearch */ = {
 			isa = PBXGroup;
 			children = (
-				1336AB1821DFC08300700524 /* RecipeSearchViewController.swift */,
-				1336AB1A21DFC69F00700524 /* RecipeResultsViewController.swift */,
+				1336AB1821DFC08300700524 /* MealSearchViewController.swift */,
+				1336AB1A21DFC69F00700524 /* MealResultsViewController.swift */,
 			);
-			path = RecipeSearch;
+			path = MealSearch;
 			sourceTree = "<group>";
 		};
 		F432123E21E36F49008F4BFE /* Supporting Files */ = {
@@ -206,15 +192,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				13265F07224CE32500E6D0A9 /* SegueIdentifiers.swift in Sources */,
-				13F0C8F42217128B008F3E39 /* MyIngredientsTableViewController.swift in Sources */,
-				135DFB192253B83B0074D7E4 /* RecipeListViewController.swift in Sources */,
-				13C239B5226601CA006F38FB /* LeftoverRecipeSearchViewController.swift in Sources */,
+				135DFB192253B83B0074D7E4 /* ResultsViewController.swift in Sources */,
+				13C239B5226601CA006F38FB /* SearchViewController.swift in Sources */,
 				13A0D10222284DD8008B115B /* Ingredient.swift in Sources */,
-				1336AB1921DFC08300700524 /* RecipeSearchViewController.swift in Sources */,
-				13EBD73E2225880E005E7F3E /* ingredients.swift in Sources */,
+				1336AB1921DFC08300700524 /* MealSearchViewController.swift in Sources */,
 				13F10C0A21BAB5D000538958 /* AppDelegate.swift in Sources */,
-				1336AB1B21DFC69F00700524 /* RecipeResultsViewController.swift in Sources */,
-				13265F05224CDEC300E6D0A9 /* LeftoverRecipeViewController.swift in Sources */,
+				1336AB1B21DFC69F00700524 /* MealResultsViewController.swift in Sources */,
+				13265F05224CDEC300E6D0A9 /* FinalRecipeViewController.swift in Sources */,
 				13FF11FC2241536800072D87 /* Recipe.swift in Sources */,
 				F411934421E4C67A00FA9BDB /* HomeViewController.swift in Sources */,
 			);
